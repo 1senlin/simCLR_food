@@ -47,9 +47,9 @@ in_feat = model.fc.in_features
 
 final_mlp=nn.Sequential(nn.Linear(in_feat, 256),
                         nn.ReLU(),
-                        nn.Linear(256, 128))#,
-                        #nn.ReLU(),
-                        #nn.Linear(128, 64))
+                        nn.Linear(256, 128),
+                        nn.ReLU(),
+                        nn.Linear(128, 64))
 
 ## Add final layer to the model
 model.fc = final_mlp
@@ -104,8 +104,8 @@ def train_model(model, optimizer, scheduler, num_epochs):
 if False:
     train_model(model, optimizer, scheduler, num_epochs)
 else:
-    model.load_state_dict(torch.load("results/model.pth"))
-    optimizer.load_state_dict(torch.load("results/optimizer.pth"))
+    model.load_state_dict(torch.load("results/model_3layer_mlp_256_64_40ish.pth"))
+    optimizer.load_state_dict(torch.load("results/optimizer_3layer_mlp_256_64_40ish.pth"))
 
 if True:
     model.eval()
