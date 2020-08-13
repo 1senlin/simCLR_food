@@ -1,0 +1,17 @@
+name: simCLR_food
+dependencies:
+    - python=3.7
+    - pip
+    - numpy
+    - pytorch
+    - matplotlib
+    - jupyter
+    - pytest
+    - black
+    - flake8
+    - h5py
+    - torchvision
+    - scikit-image
+    - scikit-learn
+    - pandas
+    - seaborn

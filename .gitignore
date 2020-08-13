@@ -127,3 +127,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# LiClipse
+.project
+.pydevproject
+
+# Data
+image_files
+
+# Result files
+results
