@@ -139,5 +139,5 @@ image_files
 results
 old_results
 example_images/images/apple_pie
-example_images/images/chocolate_cake
+#example_images/images/chocolate_cake
 #example_images/images/huevos_rancheros
