@@ -34,8 +34,7 @@ class FoodDataset(Dataset):
             names of the food classifications.
 
     Args:
-        filename (`str`): The file location of an HDF5 file.
-        path (`str`): The path a directory containing all the image files.
+        filename (`str`): The file location of an HDF5 file
         transform (`torchvision.transforms.Compose`): Contains the
             transformations applied to each image prior to being imported
             to pytorch.
@@ -52,7 +51,7 @@ class FoodDataset(Dataset):
             self.category_names = f["category_names"][()]
             f.close()
         else:
-            self.root_path = 'image_files/images'
+            self.root_path = '/'.join(filename.split('/')[:-1])+'/images'
             self.file_names = pd.read_csv(filename, header=None, names=['ims'])
             self.file_names = self.file_names.apply(lambda x: x+'.jpg' if not
                                                     x.ims.endswith('.jpg') else 
