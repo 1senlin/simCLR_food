@@ -14,7 +14,6 @@ import seaborn as sns
 import numpy as np
 import os
 
-
 class simCLR():
     def __init__(self, datasets=['example_images/train.txt', 
                                  'example_images/test.txt'],
