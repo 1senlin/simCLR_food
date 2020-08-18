@@ -7,7 +7,7 @@ Simple demonstration using simCLR as a classifier for a subset of foods from the
 To train your model using the dataset provided, clone the repository, install the necessary python packages, and run the provided executable. 
 
 ```bash
-git clone 
+git clone https://github.com/GarrettDebs/simCLR_food.git
 cd simCLR_food
 conda env create -f environment.yml
 conda activate simCLR_food
