@@ -167,7 +167,7 @@ class simCLR():
             
             ### Calculate average loss over the course of the run
             loss_avg.append(np.array(running_loss).mean())
-            print('running loss: %g'%loss_avg[-1])
+            print('Running loss: %g'%loss_avg[-1])
             
             if self.scheduler:
                 self.scheduler.step()
