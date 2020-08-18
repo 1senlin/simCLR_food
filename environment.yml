@@ -15,4 +15,5 @@ dependencies:
     - scikit-learn
     - pandas
     - seaborn
-    - piexif
+    - pip:
+            - piexif
